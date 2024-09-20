@@ -13,7 +13,6 @@ function question() {
     if (parseInt(choice) == numberToGuess) {
       console.log("correct :)");
       flag = true;
-      clearInterval(id);
       rl.close();
     } else if (parseInt(choice) > numberToGuess) {
       console.log("is too high");
